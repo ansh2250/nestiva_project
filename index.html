@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NESTIVE DIAGNOSTIC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="stylesheet" href="stylesheet/master.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- navbar part start -->
+  <div class="container-fluid sticky-top bg-white">
+    <div class="row">
+      <div class="col-md-10 m-auto">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html"><img src="image/logo/nestiva logo.png" alt="" width="120px"> </a>
+          <!-- toggle button -->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- toggle button -->
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <!-- offcanvas header -->
+            <div class="offcanvas-header">
+              <a href="index.html"> <img src="image/logo/nestiva logo white.png" alt="" width="115px"></a>
+              <button type="button" class="btn-close btn-close-white shadow-none border-0" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <!-- offcanvas header -->
+            <!-- offcanvas body -->
+            <div class="offcanvas-body">
+              <!-- navbar nav -->
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 gap-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html"><i class="fa-duotone fa-solid fa-notes-medical"></i>Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Department</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Career</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Offer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false"> About </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">About Center </a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Mission & Vision </a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#"> Our Values </a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Benifit For You</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Our Strength</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Director's Message</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="true"> packages </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Populer packages</a></li>
+                    <li><a class="dropdown-item" href="#">Populer Tests</a></li>
+                    <li><a class="dropdown-item" href="#"> Test By Unhealthy Habit </a></li>
+                    <li><a class="dropdown-item" href="#"> Govt. Panel Health Test</a></li>
+                    <li><a class="dropdown-item" href="#">Digital X-ray</a></li>
+                    <li><a class="dropdown-item" href="#">Ultrasound</a></li>
+                    <li><a class="dropdown-item" href="#">CT Scan</a></li>
+                    <li><a class="dropdown-item" href="#">MRI Scan</a></li>
+                    <li><a class="dropdown-item" href="#">ECG Test</a></li>
+                    <li><a class="dropdown-item" href="#">Echo Test</a></li>
+                    <li><a class="dropdown-item" href="#">TMT Test</a></li>
+                    <li><a class="dropdown-item" href="#">PET Scan</a></li>
+                    <li><a class="dropdown-item" href="#">EEG Test</a></li>
+                    <li><a class="dropdown-item" href="#">DEXA Scan</a></li>
+                    <li><a class="dropdown-item" href="#">PFT Tests</a></li>
+                    <li><a class="dropdown-item" href="#">Mammography</a></li>
+                    <li><a class="dropdown-item" href="#">EMG NCV Test</a></li>
+                    <li><a class="dropdown-item" href="#">Scan Center</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- navbar nav -->
+            </div>
+            <!-- offcanvas body -->
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- navbar part end -->
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- Header Carousel Start -->
+<div id="headerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="container">
+      <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('image/header/background\ one.jpg'); background-size: cover; background-position: center;">
+              <div class="overlay"></div> <!-- Overlay Element -->
+              <div class="row align-items-center h-100">
+                  <div class="col-md-6 text-center text-md-end">
+                      <div class="img-container">
+                          <img src="image/png/girl-mobile.png" alt="Girl Mobile" class="img-fluid">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="carousel-caption d-flex flex-column justify-content-center align-items-end text-end h-100">
+                          <h3 class="carousel-title mb-2">NESTIVA DIAGNOSTICS</h3>
+                          <p class="carousel-text mb-3">Accurate, Reliable and Timely Diagnostic Services.</p>
+                          <button class="call-btn btn btn-primary" onclick="location.href='tel:+919155718571'">Call Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('image/header/background\ one.jpg'); background-size: cover; background-position: center;">
+              <div class="overlay"></div> <!-- Overlay Element -->
+              <div class="row align-items-center h-100">
+                  <div class="col-md-6 text-center text-md-end">
+                      <div class="img-container">
+                          <img src="image/png/scann.png" alt="Scan" class="img-fluid">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="carousel-caption d-flex flex-column justify-content-center align-items-end text-end h-100">
+                          <h3 class="carousel-title mb-2">POINT OF CARE ULTRASOUND MACHINE</h3>
+                          <p class="carousel-text mb-3">Get your samples collected at your doorstep.</p>
+                          <button class="call-btn btn btn-primary" onclick="location.href='tel:+919155718571'">Call Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url('image/header/background\ one.jpg'); background-size: cover; background-position: center;">
+              <div class="overlay"></div> <!-- Overlay Element -->
+              <div class="row align-items-center h-100">
+                  <div class="col-md-6 text-center text-md-end">
+                      <div class="img-container">
+                          <img src="image/png/MRI.png" alt="MRI" class="img-fluid">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="carousel-caption d-flex flex-column justify-content-center align-items-end text-end h-100">
+                          <h3 class="carousel-title mb-2">COST-EFFECTIVE SERVICES</h3>
+                          <p class="carousel-text mb-3">Affordable and high-quality diagnostics.</p>
+                          <button class="call-btn btn btn-primary" onclick="location.href='tel:+919155718571'">Call Now</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="carousel-control-prev" href="#headerCarousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#headerCarousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </a>
+</div>
+<!-- Header Carousel End -->
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55 -->
+<!-- Testimonial Section -->
+<div class="container testimonial mt-5">
+  <div class="row">
+    <div class="col-md-6 text-center p-3">
+      <h2>Premier Diagnostics Centre in Patna</h2>
+      <p class="text">
+        <span id="welcome">Welcome</span> to Nestiva Diagnostics, your trusted partner in health diagnostics, located in the heart of Patna.
+        We provide comprehensive diagnostic services using advanced technology to ensure the highest accuracy and
+        reliability for all your medical testing needs. At Nestiva Diagnostics, we pride ourselves on delivering
+        top-notch diagnostic services to Patna and its surrounding areas. Our state-of-the-art facility is equipped
+        with the latest technology to ensure accurate and timely results for all your diagnostic needs.
+        <span class="dots">...</span><span class="more">
+          Experience superior diagnostic services with a commitment to accuracy and care. We offer a comprehensive
+          range of diagnostic tests with unmatched accuracy and speed. Our commitment to precision, reliability, and
+          patient care sets us apart as the premier diagnostics center in the region. Whether you need routine testing
+          or specialized diagnostic procedures, our state-of-the-art facility is equipped to meet all your health
+          needs.
+        </span>
+      </p>
+      <button class="readMoreBtn mb-3">Read More</button>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <h2>Nestiva Diagnostics - Premier Diagnostics Centre in Patna</h2>
+      <p class="text">
+        Welcome to Nestiva Diagnostics, your trusted partner in health diagnostics, located in the heart of Patna.
+        We provide comprehensive diagnostic services using advanced technology to ensure the highest accuracy and
+        reliability for all your medical testing needs. At Nestiva Diagnostics, we pride ourselves on delivering
+        top-notch diagnostic services to Patna and its surrounding areas. Our state-of-the-art facility is equipped
+        with the latest technology to ensure accurate and timely results for all your diagnostic needs.
+        <span class="dots">...</span><span class="more">
+          Experience superior diagnostic services with a commitment to accuracy and care. We offer a comprehensive
+          range of diagnostic tests with unmatched accuracy and speed. Our commitment to precision, reliability, and
+          patient care sets us apart as the premier diagnostics center in the region. Whether you need routine testing
+          or specialized diagnostic procedures, our state-of-the-art facility is equipped to meet all your health
+          needs.
+        </span>
+      </p>
+      <button class="readMoreBtn">Read More</button>
+    </div>
+  </div>
+</div>
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55 -->
+  <!-- section info -->
+  <section id="detail" class="details mt-5 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+          <div class="content-block">
+            <figure class="shadow">
+              <img src="image/first-section/blood test.png" class="img-responsive" alt="">
+              <a href="#">
+                <figcaption>
+                  <h4>BLOOD TEST</h4>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+          <div class="content-block">
+            <figure class="shadow">
+              <img src="image/first-section/dengue.png" class="img-responsive" alt="">
+              <a href="#">
+                <figcaption>
+                  <h4>DENGUE</h4>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+          <div class="content-block">
+            <figure class="shadow">
+              <img src="image/first-section/doctor.png" class="img-responsive" alt="">
+              <a href="#">
+                <figcaption>
+                  <h4>DOCTOR CONSULTANT</h4>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+          <div class="content-block">
+            <figure class="shadow">
+              <img src="image/first-section/ultrasound.png" class="img-responsive" alt="">
+              <a href="#">
+                <figcaption>
+                  <h4>ULTRASOUND</h4>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+          <div class="content-block">
+            <figure class="shadow">
+              <img src="image/first-section/liver test.png" class="img-responsive" alt="">
+              <a href="#">
+                <figcaption>
+                  <h4>LFT (Liver Function Test)</h4>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+          <div class="content-block">
+            <figure class="shadow">
+              <img src="image/first-section/scan.png" class="img-responsive" alt="">
+              <a href="#">
+                <figcaption>
+                  <h4>MRI SCAN</h4>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section info one-->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55 -->
+
+  <br>
+
+  <!-- What Makes Us Different -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>WHAT MAKES US DIFFERENT</h2>
+        <P>At Nestiva Diagnostics, we go beyond traditional diagnostic services to offer a unique blend of cutting-edge technology, expert care, and personalized service. We strive to be more than just a diagnostic center. Our commitment to excellence and patient-centered care sets us apart as the premier choice for diagnostic services in Patna. Our dedication to technological innovation, expert care, and patient-focused service makes us the preferred choice for diagnostic testing in Patna. 
+
+         <center> <b>Here’s a closer look at what makes us the premier choice for diagnostic testing in Patna</b></center>
+        </P>
+
+        <ul>
+          <li>Advanced Diagnostic Technology
+          </li>
+          <p>Nestiva Diagnostics is equipped with the latest and most sophisticated diagnostic technology available. Our facility features high-resolution imaging systems, precision blood testing equipment, and state-of-the-art analysis tools. By integrating these advanced technologies, we ensure that each diagnostic test is performed with the utmost accuracy and reliability.
+          </p>
+
+          <li>Highly Skilled Medical Professionals
+          </li>
+          <p>Our team comprises experienced and certified medical professionals who are dedicated to providing the highest level of diagnostic care. From skilled technicians to expert pathologists, every member of our staff undergoes rigorous training and continuous education to stay at the forefront of the medical field. This expertise translates into precise diagnoses and exceptional patient care.</p>
+          
+          <li> Rapid and Efficient Results
+          </li>
+          <p>We understand that timely results are crucial for effective medical decision-making. At Nestiva Diagnostics, we employ streamlined processes and efficient workflows to deliver fast turnaround times without sacrificing accuracy. Our commitment to speed ensures that you receive critical information quickly, helping you and your healthcare provider make informed decisions promptly.</p>
+
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li> Comprehensive Diagnostic Services</li>
+          <p>Nestiva Diagnostics offers a full spectrum of diagnostic services in one convenient location. Whether you need blood tests, imaging studies (such as X-rays, Ultrasounds, and CT Scans), pathology analysis, or comprehensive health check-ups, we provide a range of services to meet all your diagnostic needs. This holistic approach saves you time and effort by consolidating multiple diagnostic services under one roof.
+          </p>
+
+          <li> Patient-Centric Approach
+          </li>
+          <p>At the heart of Nestiva Diagnostics is a commitment to patient-centered care. We strive to create a welcoming and supportive environment for every patient. Our staff is attentive, empathetic, and dedicated to addressing your concerns, ensuring that your experience with us is as comfortable and stress-free as possible. We prioritize clear communication and personalized care to meet your unique needs.
+          </p>
+          <li>Transparent and Affordable Pricing
+          </li>
+          <p>We believe that quality diagnostic services should be accessible to everyone. Our transparent pricing model means there are no hidden fees or unexpected costs. We offer competitive rates for all our services while maintaining high standards of quality and accuracy. Our focus on affordability ensures that you receive top-tier diagnostic care without breaking the bank.</p>
+          
+          <li>Convenient Location and Accessibility</li>
+          <p>Located centrally in Patna, Nestiva Diagnostics is easily accessible, with ample parking and a user-friendly facility layout. We offer flexible appointment scheduling, including walk-in options, to accommodate your busy lifestyle. Our goal is to make your visit as convenient and hassle-free as possible.</p>
+
+          <li>Commitment to Accuracy and Quality
+          </li>
+          <p>Accuracy is paramount in diagnostic testing, and we are dedicated to upholding the highest standards. Our quality control protocols and adherence to best practices ensure that every result is accurate and reliable. We continuously review and update our procedures to ensure that we deliver the best possible diagnostic outcomes.
+          </p>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- What Makes Us Different -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55 -->
+ 
+  <!-- fixed background -->
+  <div class="container-fluid mt-5">
+    <div class="row fixed-background">
+      <!-- <div class="col-6 bg-dark shadow text-white"  data-aos="fade-up">
+    <h2>Nestiva Diagnostics </h2>
+    <p> (A unit of NMPL) is well equipped with state-of-art-modern healthcare facility, with a mission to improve health well-being through laboratory diagnostic excellence, and excellent patient’s service was commissioned in December, 2019.</p>
+   </div> -->
+    </div>
+  </div>
+  <!-- fixed background -->
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55 -->
+  <!-- Diagnostic Testing  -->
+  <div class="container mt-5">
+    <div class="row m-auto">
+      <div class="col-md-6 text-center">
+        <img src="image/png/testimonial girl.png" alt="testimonial" class="img-fluid" data-aos="zoom-in-up">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <br>
+        <h2 data-aos="zoom-in-up">Why Choose Nestiva?</h2>
+        <p data-aos="zoom-in-up">At Nestiva, we strive to provide every customer with the best diagnostic services and
+          accurate results. Our commitment is founded on humanity, compassion, and the drive to deliver precise
+          diagnostics that facilitate your treatment and health journey. Above all, we prioritize compassionate care and
+          safeguard our patients' interests.</p>
+          <br>
+        <h2 data-aos="zoom-in-up">Expertise and Innovation</h2>
+        <p data-aos="zoom-in-up">Our team comprises highly skilled professionals who utilize the latest advancements in
+          diagnostic technology. We continually invest in state-of-the-art equipment and training to ensure that we
+          offer the most accurate and reliable diagnostic services available.</p>
+        <br>
+        <h2 data-aos="fade-up">Comprehensive Services</h2>
+        <p data-aos="zoom-in">From routine blood tests to advanced imaging and specialized diagnostics, we provide a
+          wide range of services tailored to meet the unique needs of each patient. Our comprehensive approach ensures
+          that you receive all the diagnostic care you need under one roof.</p>
+
+      </div>
+    </div>
+  </div>
+  <!-- Diagnostic Testing  -->
+
+  <br>
+  <!-- Diagnostic Testing  -->
+  <div class="container">
+    <div class="row m-auto consultation">
+      <div class="col-md-6  mt-5 mb-5 md-0">
+        <h2 data-aos="zoom-in-up">We Provide High Quality Diagnostic Testing Services</h2>
+        <p data-aos="zoom-in-up"> <b>Nestiva Diagnostics Center </b> is a leading healthcare provider dedicated to
+          delivering comprehensive and reliable diagnostic testing services. We offer a wide range of tests covering
+          various medical specialties, utilizing advanced automatic Testing Machine and Technology and employing
+          experienced medical professionals.</p>
+        <img src="image/pictures/post_one.jpg" class="img-fluid mt-5" alt="">
+      </div>
+      <div class="col-md-6 mt-5 mb-5 mb-5 md-0">
+        <h2 data-aos="zoom-in-up">We Provide High Quality Diagnostic Testing Services</h2>
+        <p data-aos="zoom-in-up"> <b>Nestiva Diagnostics Center </b> is a leading healthcare provider dedicated to
+          delivering comprehensive and reliable diagnostic testing services. We offer a wide range of tests covering
+          various medical specialties, utilizing advanced automatic Testing Machine and Technology and employing
+          experienced medical professionals.</p>
+        <img src="image/pictures/post_two.jpg" class="img-fluid mt-5" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Diagnostic Testing  -->
+<!-- enquiry form -->
+<div class="container gmap">
+  <div class="row faizan">
+    <div class="col-md-6">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.2525857329774!2d85.0683280741703!3d25.629741114047672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed57ab517ab20d%3A0xb7896a16ae25efbe!2sNestiva%20Diagnostic!5e0!3m2!1sen!2sin!4v1724133166426!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  data-aos="fade-up"></iframe>
+    </div>
+    <div class="col-md-6">
+      <div class="form-container" data-aos="fade-down">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="d2aacc9b-64bd-427a-acd5-18555642ce6a">
+
+          <div class="input-group-row">
+            <div class="input-group">
+              <input type="text" name="name" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+              <input type="tel" name="phone" placeholder="Phone" required>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+
+          <div class="input-group">
+            <input type="text" name="address" placeholder="Full Address" required>
+          </div>
+
+          <div class="input-group">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+          </div>
+
+          <div class="input-group mt-3">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- enquiry form -->
+
+  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+  <!-- Footer Start -->
+  <div class="container-fluid footer">
+    <div class="container">
+      <div class="row justify-content-center row-1 m-auto">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn enquiry-form" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          ENQUIRY FORM
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Enquiry Form</h1>
+                <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- Enquiry Form Start -->
+                <div class="row justify-content-center">
+                  <div class="col-md-12">
+                    <div class="card shadow">
+                      <div class="card-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                          </div>
+                          <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4"
+                              placeholder="Type your message here"></textarea>
+                          </div>
+                          <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Enquiry Form End -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row d-flex justify-content-between row-2 mt-4">
+        <div class="col-sm-6 col-md-3 col-lg-2 mb-3">
+          <h5 class="footer-headings">About</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="list-items">About Center</a></li>
+            <li><a href="#" class="list-items">Mission Vision</a></li>
+            <li><a href="#" class="list-items">Our Values</a></li>
+            <li><a href="#" class="list-items">Our Strength</a></li>
+            <li><a href="#" class="list-items">Director's Message</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-2 mb-3">
+          <h5 class="footer-headings">Important Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="list-items">Home</a></li>
+            <li><a href="#" class="list-items">Services</a></li>
+            <li><a href="#" class="list-items">Department</a></li>
+            <li><a href="#" class="list-items">Career</a></li>
+            <li><a href="#" class="list-items">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-2 mb-3">
+          <h5 class="footer-headings">Top Stories</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="list-items">Story One</a></li>
+            <li><a href="#" class="list-items">Story Two</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-2 mb-3">
+          <h5 class="footer-headings">Need Help?</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="list-items">Getting Started</a></li>
+            <li><a href="#" class="list-items">Contact Us</a></li>
+            <li><a href="#" class="list-items">FAQ's</a></li>
+            <li><a href="#" class="list-items">Press</a></li>
+          </ul>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3 text-lg-left text-center">
+          <div class="pl-lg-5 px-4">
+            <div class="g-play pb-4">
+              <img class="img-fluid" src="image/logo/nestiva logo white.png" alt="Nestiva Logo">
+            </div>
+            <div class="d-flex flex-column pl-lg-2">
+              <h5 class="footer-headings mb-3">Follow Us</h5>
+              <div class="d-flex justify-content-lg-start justify-content-center">
+                <div class="mx-2"><i class="fa fa-facebook"></i></div>
+                <div class="mx-2"><i class="fa fa-twitter"></i></div>
+                <div class="mx-2"><i class="fa fa-instagram"></i></div>
+                <div class="mx-2"><i class="fa fa-youtube"></i></div>
+                <div class="mx-2"><i class="fa fa-linkedin"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Copy Start -->
+    <div class="footer-copy">
+      <p> © 2023. All Rights Reserved. Website developed by  <a href="gosparrow.in">GO SPARROW</a></p>
+    </div>
+    <!-- Footer Copy End -->
+  </div>
+  <!-- Footer End -->
+
+<!-- fixed button for call and whatsapp -->
+<div class="fixed-buttons">
+  <a href="https://wa.me/+919155718571" target="_blank"><img src="image/png/wha.png" alt="" data-aos="fade-left"></a>
+  <a href="tel:+919155718571" class="call"><img src="image/png/call.png" alt="" data-aos="fade-right"></a>
+</div>
+<!-- fixed button for call and whatsapp -->
+  <!-- javascript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 120,
+      duration: 1000
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <!--Start of Tawk.to Script-->
+<!-- <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/66c305820cca4f8a7a77800e/1i5ksr1sj';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script> -->
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>
