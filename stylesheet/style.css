@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
+
+
+
 /* navbar part */
 .offcanvas-header {
     background-color: var(--primary-color);
     color: var(--white);
 }
 
+.navbar-nav .nav-item .nav-link{
+  font-family: lato;
+  font-size:14px;
+  font-weight: 600;
+}
 /* Custom CSS to handle the hover */
 .navbar-nav .nav-item:hover .dropdown-menu {
     display: block;
@@ -22,7 +30,7 @@
 }
 
 .dropdown-menu a {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--white);
 }
 
@@ -47,9 +55,9 @@
 /* navabr end */
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-/* header carousel */
+/* Header Carousel */
 .img-container {
-  height: 400px; /* Set the height as needed */
+  height: 500px; /* Set the height as needed */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -62,31 +70,13 @@
 }
 
 .carousel-title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
 }
 
-.carousel-text {
-  font-size: 1.25rem;
-  color: #f8f9fa;
-}
-
 .call-btn {
   font-size: 1rem;
-  padding: 10px 20px;
-}
-
-/* Overlay Styles */
-.overlay {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  z-index: 1;
 }
 
 .carousel-item {
@@ -100,82 +90,152 @@
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .carousel-title {
-      font-size: 1.5rem;
+    font-size: 1.25rem; /* Adjusted font size */
   }
+  
+  /* Overlay Styles */
+.overlay {
+  display: block; /* Show overlay by default */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 1;
+}
 
-  .carousel-text {
-      font-size: 1rem;
-  }
 
   .call-btn {
-      font-size: 0.875rem;
-      padding: 8px 16px;
+    font-size: 0.875rem;
   }
 
   .overlay {
-      display: block; /* Show overlay on smaller screens */
+    opacity: 0.7; /* Slightly increase overlay opacity on smaller screens */
   }
 }
 
 @media (max-width: 576px) {
   .carousel-title {
-      font-size: 1.25rem;
+    font-size: 1rem; /* Further reduced font size for small screens */
   }
 
-  .carousel-text {
-      font-size: 0.875rem;
-  }
+/* Overlay Styles */
+.overlay {
+  display: block; /* Show overlay by default */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 1;
+}
 
   .call-btn {
-      font-size: 0.75rem;
-      padding: 6px 12px;
+    font-size: 0.75rem;
   }
 }
+
+/* Additional Adjustments for Better Visuals on Mobile */
+@media (max-width: 480px) {
+  .img-container {
+    height: 300px; /* Reduce image container height for very small screens */
+  }
+}
+
 /* header carousel */
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-.testimonial {
-  background-color: #f7f7f7;
-  padding: 30px 15px;
+/* diagnostic_testing */
+.diagnostic_testing {
+  padding: 50px 15px;
+  border-radius: 15px;
 }
-.testimonial h2{
-  font-size: 22px;
-  text-transform: uppercase;
+.testing_content {
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.testimonial #welcome{
-  font-size: 25px;
-  font-weight:700;
-  font-style: italic;
-  color: var(--black)
+.testing_content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-.testimonial .text, .more{
-  font-size: 14px;
+.testing_content h3 {
   font-family: lato;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
-.testimonial .more {
+.testing_content p {
+  font-size: 16px;
+  font-family:lato;
+}
+/* diagnostic_testing */
+
+/* Testimonial Section */
+.testimonial {
+  border-radius: 8px;
+  margin: 0 auto;
+  }
+  
+  .testimonial h3 {
+    font-family: lato;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  }
+  
+  .testimonial .text {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: justify;
+  }
+  
+  .testimonial .text .dots {
+  font-weight: bold;
+  }
+  
+  .testimonial .text .more {
   display: none;
-}
+  }
+  
+  .testimonial .readMoreBtn {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: inherit;
+  cursor: inherit;
+  transition: inherit;
+  color: inherit;
+  }
+  
+  .testimonial img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+   .testimonial h3 {
+    font-size: 1.5rem;
 
-.readMoreBtn {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  margin-top: 10px;
-
-}
-
-.readMoreBtn:hover {
-  background-color: var(--black);
-  transition: 0.3s;
-}
+  }
+  
+  .testimonial .text {
+    font-size: 0.95rem;
+  }
+  }
 
 
-/* scrtion info one start*/
+
+/* section info one start*/
   .details .content-block {
     position: relative;
     overflow: hidden;
@@ -213,10 +273,10 @@
     opacity: 0;
   }
   
-  .details figcaption h4 {
+  .details figcaption h3 {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
   }
   
@@ -235,8 +295,8 @@
       padding: 10px;
     }
   
-    .details figcaption h4 {
-      font-size: 12px;
+    .details figcaption h3 {
+      font-size: 18px;
     }
   
     .details .col-12 {
@@ -245,7 +305,8 @@
     }
   }
   /* section info one end*/
-  /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+  /* fixed backgrou d */
   .fixed-background {
     width: 100%;
     height: 100vh;
@@ -260,13 +321,7 @@
     justify-content: center;
     text-align: center;
 }
-/* 
-.fixed-background h2{
-    font-size: 35px;
-}
-.fixed-background p{
-  text-align: justify;
-} */
+
 @media (max-width: 768px) {
     .fixed-background {
         background-attachment: scroll; /* Change to scroll on smaller screens to avoid issues */
@@ -274,161 +329,21 @@
     }
 }
 
-/*  diagnostic consultation */
+/* consultation */
+
+.consultation h3{
+  font-family: lato;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .consultation p{
   font-family: lato;
-  font-style: italic;
-}
-.consultation h2{
-  font-family: lato;
   font-size: 16px;
-  font-weight: 600;
 }
 
 
-/* CSS for Footer and Enquiry Form */
-.footer {
-  background-color: var(--primary-color);
-  padding: 50px 20px;
-  margin-top: 15px;
-  color: white;
-}
-/* .row-1{
-} */
-.row-1 .enquiry-form{
-  width:182px;
-  background-color: black;
-  color: white;
-}
-.footer .footer-headings {
-  color: white;
-  margin-bottom: 20px;
-}
 
-.enquiry-form .card {
-  border: none;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: white;
-}
-
-.enquiry-form .card-title {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--primary-color);
-}
-
-.enquiry-form .form-label {
-  font-weight: 600;
-  color: #333;
-}
-
-.enquiry-form .form-control {
-  border-radius: 5px;
-  box-shadow: none;
-  border: 1px solid #ced4da;
-}
-
-.enquiry-form .btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.enquiry-form .btn-primary:hover {
-  background-color: var(--primary-color-dark);
-  border-color: var(--primary-color-dark);
-}
-
-@media (max-width: 576px) {
-  .enquiry-form {
-    padding: 30px 10px;
-  }
-
-  .enquiry-form .card {
-    padding: 15px;
-  }
-
-  .enquiry-form .card-title {
-    font-size: 20px;
-  }
-}
-
-.footer ul {
-  padding: 0;
-  list-style: none;
-}
-
-.footer ul li {
-  margin-bottom: 10px;
-}
-
-.footer ul li a {
-  color: #ffffff;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.footer ul li a:hover {
-  text-decoration: underline;
-}
-
-.footer .fa {
-  font-size: 20px;
-  color: white;
-}
-
-.footer .footer-copy {
-  background-color: #f1f1f1;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.footer .footer-copy p {
-  margin: 0;
-  font-size: 14px;
-  color: #333;
-  text-align: center;
-}
-
-.footer .footer-copy a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .footer .footer-headings {
-    margin-bottom: 10px;
-  }
-
-  .footer .g-play img {
-    margin-bottom: 20px;
-  }
-
-  .footer .row-2 {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 576px) {
-  .footer {
-    padding: 30px 10px;
-  }
-
-  .footer .row-2 {
-    text-align: center;
-  }
-
-  .footer .g-play img {
-    margin-bottom: 20px;
-  }
-
-  .footer .footer-headings {
-    margin-bottom: 15px;
-  }
-}
 
 /* fixed button */
 .fixed-buttons{
@@ -445,9 +360,8 @@
 
 /* enquiry form */
 .gmap {
-  background-color:var(--primary-color);
   border-radius: 28px;
-  padding: 20px;
+  padding: 30px;
   margin: 20px auto;
 }
 
@@ -455,70 +369,12 @@
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: 100%;
 }
 
-/* Adjust FORM container */
-.form-container {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+.book_service{
+  font-family: poppins;
+  font-size: 45px;
 }
-
-/* Align input groups in a row */
-.input-group {
-  margin-bottom: 15px;
-}
-
-.input-group-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.input-group-row .input-group {
-  flex: 1;
-}
-
-.input-group-row .input-group:first-child {
-  margin-right: 10px;
-}
-
-/* Standard input and textarea styling */
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  color: #333;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-input:focus, textarea:focus {
-  border-color: #AC8977;
-  outline: none;
-  box-shadow: 0 0 8px rgba(172, 137, 119, 0.4);
-}
-
-/* Submit button styling */
-.form-container button {
-  width: 100%;
-  padding: 12px;
-  background-color: #000000;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.form-container button:hover {
-  background-color: #AC8977;
-  transform: translateY(-2px);
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .gmap {
     padding: 10px;
@@ -529,21 +385,15 @@ input:focus, textarea:focus {
     width: 100%;
     max-width: 100%;
   }
-
-  .input-group-row {
-    flex-direction: column;
-  }
-
-  .input-group-row .input-group:first-child {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
 }
 
 /* enquiry form */
 
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+
 /* service page css start */
 .service_img_container {
   height: 400px; /* Set the height as needed */
@@ -563,4 +413,49 @@ input:focus, textarea:focus {
   margin-right: -150px;
   clip-path: circle(72.6% at 85% 60%);
 }
-/* service page css start */
+
+
+/* Waht makes us differnt */
+
+.different 
+{
+  background-color:whitesmoke;
+}  
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color:var(--primary-color);
+  text-align: center;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+
+}
+
+li {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color:var(--secondry-color);
+}
+
+li + p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}

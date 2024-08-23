@@ -1,0 +1,145 @@
+
+/* CSS for Footer and Enquiry Form */
+.footer {
+    background-color: var(--primary-color);
+    padding: 50px 20px;
+    margin-top: 15px;
+    color: white;
+  }
+  /* .row-1{
+  } */
+  .row-1 .enquiry-form{
+    width:182px;
+    background-color: black;
+    color: white;
+  }
+  .footer .footer-headings {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .enquiry-form .card {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .enquiry-form .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  
+  .enquiry-form .form-label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .enquiry-form .form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+  }
+  
+  .enquiry-form .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .enquiry-form .btn-primary:hover {
+    background-color: var(--primary-color-dark);
+    border-color: var(--primary-color-dark);
+  }
+  
+  @media (max-width: 576px) {
+    .enquiry-form {
+      padding: 30px 10px;
+    }
+  
+    .enquiry-form .card {
+      padding: 15px;
+    }
+  
+    .enquiry-form .card-title {
+      font-size: 20px;
+    }
+  }
+  
+  .footer ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .fa {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .footer .footer-copy {
+    background-color: #f1f1f1;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .footer .footer-copy p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .footer .footer-copy a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .footer .footer-headings {
+      margin-bottom: 10px;
+    }
+  
+    .footer .g-play img {
+      margin-bottom: 20px;
+    }
+  
+    .footer .row-2 {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer {
+      padding: 30px 10px;
+    }
+  
+    .footer .row-2 {
+      text-align: center;
+    }
+  
+    .footer .g-play img {
+      margin-bottom: 20px;
+    }
+  
+    .footer .footer-headings {
+      margin-bottom: 15px;
+    }
+  }
+  
