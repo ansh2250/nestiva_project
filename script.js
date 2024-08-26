@@ -21,3 +21,21 @@ document.querySelector('.hover-trigger').addEventListener('mouseenter', function
     myModal.show();
   });
 
+// chat bot
+
+function sendMessage() {
+  const userInput = document.getElementById('userInput').value;
+  const messages = document.getElementById('messages');
+  const userMessage = `<p><strong>You:</strong> ${userInput}</p>`;
+  messages.innerHTML += userMessage;
+
+  // Simple response logic
+  let botResponse = 'Sorry, I do not understand.';
+  if (userInput.includes('hello')) {
+    botResponse = 'Hello! How can I assist you today?';
+  }
+
+  const botMessage = `<p><strong>Bot:</strong> ${botResponse}</p>`;
+  messages.innerHTML += botMessage;
+  document.getElementById('userInput').value = '';
+}
