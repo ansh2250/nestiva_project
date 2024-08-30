@@ -5,165 +5,41 @@
 }
 
 
-
-/* top-bar */
-.top-bar {
-  background-color: var(--primary-color);
-}
-.top-bar a{
-  text-decoration: none;
-}
-/* top-bar */
-/* navbar part */
-.offcanvas-header {
-    background-color: var(--primary-color);
-    color: var(--white);
+/* Top tsts*/
+.test-card {
+  background-color: #e9f4ff; /* Light blue background */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav .nav-item .nav-link{
-  font-family: lato;
-  font-size:16px;
-  font-weight: 600;
-}
-/* Custom CSS to handle the hover */
-.navbar-nav .nav-item:hover .dropdown-menu {
-    display: block;
+.test-card h5 {
+  text-align: center;
+  font-weight: 700;
+  color: #1b2a49; /* Dark blue color */
 }
 
-.dropdown-menu {
-    background-color: var(--secondry-color);
-    margin-top: 0;
-    /* Adjust as needed */
+.test-card ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.dropdown-menu a {
-    font-size: 12px;
-    color: var(--white);
+.test-card ul li {
+  padding: 5px 0;
+  color: #1b2a49; /* Dark blue color */
 }
 
-.dropdown-divider {
-    width: 100%;
-    margin-top: 0;
-    padding: 0;
-    text-align: center;
-}
+/* Responsive CSS: */
 
-.hover-trigger {
-    display: inline-block;
-    margin: 100px;
-    cursor: pointer;
-}
-
-.hover-trigger:hover+.modal {
-    display: block !important;
-    opacity: 1;
-}
-
-/* navabr end */
-
-/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-/* Header Carousel */
-
-
-.carousel-item{
-  width:100%;
-  border-radius:30px;
-}
-.img-container {
-  height: 500px; /* Set the height as needed */
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-container img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.carousel-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fff;
-}
-.carousel-caption p{
-  font-size: 16px;
-  text-align: right;
-  color:white;
-}
-
-.call-btn {
-  font-size: 1rem;
-}
-
-.carousel-item {
-  position: relative;
-}
-
-.carousel-caption {
-  z-index: 2; /* Ensure content is above the overlay */
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .carousel-title {
-    font-size: 1.25rem; /* Adjusted font size */
-  }
-  
-  /* Overlay Styles */
-.overlay {
-  display: block; /* Show overlay by default */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  z-index: 1;
-}
-
-
-  .call-btn {
-    font-size: 0.875rem;
-  }
-
-  .overlay {
-    opacity: 0.7; /* Slightly increase overlay opacity on smaller screens */
+/* Responsive padding for Program Curriculum mobile */
+@media (max-width: 767px) {
+  .test-card {
+      padding: 15px;
   }
 }
 
-@media (max-width: 576px) {
-  .carousel-title {
-    font-size: 1rem; /* Further reduced font size for small screens */
-  }
-
-/* Overlay Styles */
-.overlay {
-  display: block; /* Show overlay by default */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  z-index: 1;
-}
-
-  .call-btn {
-    font-size: 0.75rem;
-  }
-}
-
-/* Additional Adjustments for Better Visuals on Mobile */
-@media (max-width: 480px) {
-  .img-container {
-    height: 300px; /* Reduce image container height for very small screens */
-  }
-}
-
-/* header carousel */
-/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* top tests */
 
 /* diagnostic_testing */
 .diagnostic_testing {
@@ -361,7 +237,88 @@
 }
 
 
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background: linear-gradient(rgba(1, 167, 157, 0.8), rgba(1, 167, 157, 0.8)), url('/image/pictures/bottom_fixed.png') no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 60px 0;
+  color: #fff;
+}
 
+
+.cta h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.cta p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.cta .cta-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 10px;
+  border-radius: 5px;
+  transition: background 0.5s, border-color 0.5s;
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.cta .cta-btn:hover {
+  background:var(--secondary-color);
+  border-color:white;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .cta {
+      background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta .cta-btn-container {
+      margin-top: 20px;
+  }
+}
+
+/* Bottom Section */
+.bottom {
+    background: linear-gradient(135deg, #272262, #01A79D); /* Gradient background */;
+}
+.headline {
+    padding: 50px;
+    color: #fff;
+}
+.headline p{
+    text-align: left;
+}
+.bottom-form button{
+    background-color:white;
+}
+.bottom-form button:hover{
+    background-color: var(--secondary-color);
+    color:white;
+}
+.bottom-form .back{
+    padding: 50px 80px 50px 80px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #01A79D;
+}
 
 /* fixed button */
 .fixed-buttons{

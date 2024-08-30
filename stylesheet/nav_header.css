@@ -1,0 +1,171 @@
+
+/* top-bar */
+.top-bar {
+    background-color: var(--primary-color);
+  }
+  .top-bar a{
+    text-decoration: none;
+  }
+  /* top-bar */
+    /* Navbar part */
+    .offcanvas-header {
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-family: Lato, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* Custom CSS to handle the hover */
+    .navbar-nav .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        background-color: var(--secondry-color);
+        margin-top: 0;
+        max-height: 300px;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-snap-type: y proximity;
+    }
+
+    /* Hide scrollbar for WebKit browsers */
+    .dropdown-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .dropdown-menu a {
+        font-size: 15px;
+        color: var(--white);
+        scroll-snap-align: start;
+    }
+
+    .dropdown-divider {
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .hover-trigger {
+        display: inline-block;
+        margin: 100px;
+        cursor: pointer;
+    }
+
+    .hover-trigger:hover+.modal {
+        display: block !important;
+        opacity: 1;
+    }
+
+    /* Navbar end */
+
+  
+  /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+  /* Header Carousel */
+  
+  
+  .carousel-item{
+    width:100%;
+    border-radius:30px;
+  }
+  .img-container {
+    height: 500px; /* Set the height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-container img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .carousel-caption p{
+    font-size: 16px;
+    text-align: right;
+    color:white;
+  }
+  
+  .call-btn {
+    font-size: 1rem;
+  }
+  
+  .carousel-item {
+    position: relative;
+  }
+  
+  .carousel-caption {
+    z-index: 2; /* Ensure content is above the overlay */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .carousel-title {
+      font-size: 1.25rem; /* Adjusted font size */
+    }
+    
+    /* Overlay Styles */
+  .overlay {
+    display: block; /* Show overlay by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1;
+  }
+  
+  
+    .call-btn {
+      font-size: 0.875rem;
+    }
+  
+    .overlay {
+      opacity: 0.7; /* Slightly increase overlay opacity on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-title {
+      font-size: 1rem; /* Further reduced font size for small screens */
+    }
+  
+  /* Overlay Styles */
+  .overlay {
+    display: block; /* Show overlay by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1;
+  }
+  
+    .call-btn {
+      font-size: 0.75rem;
+    }
+  }
+  
+  /* Additional Adjustments for Better Visuals on Mobile */
+  @media (max-width: 480px) {
+    .img-container {
+      height: 300px; /* Reduce image container height for very small screens */
+    }
+  }
+  
+  /* header carousel */
+  /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
