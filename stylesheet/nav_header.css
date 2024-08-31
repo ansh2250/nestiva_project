@@ -69,7 +69,11 @@
   /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
   /* Header Carousel */
   
-  
+  #headerCarousel button{
+    margin: auto;
+    align-items:center;
+    justify-content:space-between;
+  }
   .carousel-item{
     width:100%;
     border-radius:30px;
@@ -78,9 +82,10 @@
     height: 500px; /* Set the height as needed */
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content:cnter;
     align-items: center;
   }
+
   
   .img-container img {
     height: 100%;
@@ -92,14 +97,10 @@
     font-weight: bold;
     color: #fff;
   }
-  .carousel-caption p{
-    font-size: 16px;
-    text-align: right;
-    color:white;
-  }
   
   .call-btn {
     font-size: 1rem;
+    
   }
   
   .carousel-item {
