@@ -75,5 +75,31 @@ window.addEventListener("load", () => {
     );
 });
 
+
+// back to top button
+
+ // Get the button
+ const backToTopButton = document.getElementById('backToTop');
+
+ // Show or hide the button based on scroll position
+ window.addEventListener('scroll', () => {
+   if (window.scrollY > 300) { // Show button after scrolling 300px
+     backToTopButton.style.display = 'block';
+   } else {
+     backToTopButton.style.display = 'none';
+   }
+ });
+
+ // Scroll to top when the button is clicked
+ backToTopButton.addEventListener('click', (event) => {
+   event.preventDefault();
+   window.scrollTo({
+     top: 0,
+     behavior: 'smooth'
+   });
+ });
+
+
 // service page
+
 

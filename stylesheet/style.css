@@ -130,55 +130,68 @@
 
 
 /* section info one start*/
-  .details .content-block {
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 15px 0 15px 0;
-    box-shadow: 2px 2px 2px rgba(94, 90, 90, 0.384);
-    transition: transform 0.3s ease;
+#detail .content-block {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#detail figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#detail img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#detail figure:hover img {
+  transform: scale(1.1);
+}
+
+#detail figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+#detail figure:hover figcaption {
+  opacity: 1;
+}
+
+#detail h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+#detail .shadow {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+@media (max-width: 575px) {
+  #detail h3 {
+    font-size: 14px;
   }
-  
-  .details .content-block:hover {
-    transform: scale(1.05);
-  }
-  
-  .details figure {
-    margin: 0;
-    position: relative;
-  }
-  
-  .details img {
-    width: 100%;
-    transition: opacity 0.3s ease;
-  }
-  
-  .details figcaption {
-    padding: 20px;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: top 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-  }
-  
-  .details figcaption h3 {
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-  }
-  
-  .details .content-block:hover figcaption {
-    top: 0;
-    opacity: 1;
-  }
-  
+}
   /* Media Queries for Responsive Design */
   @media (max-width: 768px) {
     .details .content-block {
@@ -244,57 +257,7 @@
   background: linear-gradient(rgba(1, 167, 157, 0.8), rgba(1, 167, 157, 0.8)), url('/image/pictures/bottom_fixed.png') no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
-  padding: 60px 0;
-  color: #fff;
 }
-
-
-.cta h3 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.cta p {
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: left;
-}
-
-.cta .cta-btn {
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 10px;
-  border-radius: 5px;
-  transition: background 0.5s, border-color 0.5s;
-  border: 2px solid #fff;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.cta .cta-btn:hover {
-  background:var(--secondary-color);
-  border-color:white;
-  color: #fff;
-}
-
-@media (max-width: 1024px) {
-  .cta {
-      background-attachment: scroll;
-  }
-}
-
-@media (max-width: 768px) {
-  .cta .cta-btn-container {
-      margin-top: 20px;
-  }
-}
-
 /* Bottom Section */
 .bottom {
     background: linear-gradient(135deg, #272262, #01A79D); /* Gradient background */;
@@ -434,3 +397,74 @@ li + p {
   margin-bottom: 20px;
   line-height: 1.5;
 }
+
+
+/* ================contact page css =======================*/
+.contact-header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  margin: 40px 0;
+  color: var(--primary-color);
+}
+
+.contact-info {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .btn-primary {
+  background-color: var(--secondry-color);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: var(--primary-color);
+}
+
+.map-section iframe {
+  border: 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* gallery part */

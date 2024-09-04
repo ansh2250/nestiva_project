@@ -14,58 +14,7 @@
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.wrapper,
-.content {
-  position: relative;
-  width: 100%;
-  z-index: 1;
-}
-
-.content {
-  overflow-x: hidden;
-}
-
-.content .section {
-  width: 100%;
-  height: 100vh;
-}
-
-.content .section.hero {
-  background-image: url(https://images.unsplash.com/photo-1589848315097-ba7b903cc1cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.image-container {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  perspective: 500px;
-  overflow: hidden;
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
-
-  </style>
 </head>
-
 <body>
    <!-- Navbar part start -->
    <div class="container-fluid sticky-top bg-white" style="z-index: 1030;">
@@ -177,19 +126,94 @@
   </div>
   <!-- Navbar part end -->
 
-  <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-  <div class="wrapper">
-    <div class="content">
-      <section class="section hero"></section>
-      <section class="section gradient-purple"></section>
-      <section class="section gradient-blue"></section>
-    </div>
-    <div class="image-container">
-      <img src="https://assets-global.website-files.com/63ec206c5542613e2e5aa784/643312a6bc4ac122fc4e3afa_main%20home.webp" alt="image">
-    </div>
-  </div>
+    <header class="contact-header" data-aos="fade-down">
+        <h1>Nestiva Diagnostic Centre </h1>
+        <p>Your health is our priority. Reach out to us anytime.</p>
+    </header>
 
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-right">
+                <div class="contact-info flex-fill">
+                    <h3>Contact Information</h3>
+                    <p><strong>Address:</strong> Sangam Vihar, New Mithila Colony, AIIMS Digha Bridge, Opposite Pillar No.
+                        250, Patna, Bihar</p>
+                    <p><strong>PIN:</strong> 800018</p>
+                    <p><strong>Contact No.:</strong> +91 9155718571, 7360050050</p>
+                    <p><strong>Email:</strong> <a href="mailto:report2nestiva@gmail.com">report2nestiva@gmail.com</a></p>
+                    <p><strong>Website:</strong> <a href="http://www.Nestivadiagnostics.com" target="_blank">www.Nestivadiagnostics.com</a></p>
+                </div>
+            </div>
 
+            <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-left">
+                <div class="contact-form flex-fill">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12" data-aos="fade-up">
+                <div class="map-section">
+                    <h3 class="section-title">Find Us Here</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8156447522463!2d85.09541097479557!3d25.609137216445894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58fc5da0e537%3A0x22f48712e3f31723!2sSangam%20Vihar%2C%20New%20Mithila%20Colony%2C%20Patna%2C%20Bihar%20800018!5e0!3m2!1sen!2sin!4v1693731516469!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+    <!-- fixed button for call and whatsapp -->
+    <div class="fixed-buttons">
+      <a href="https://wa.me/+919155718571" target="_blank"><img src="image/png/wha.png" alt="" data-aos="fade-left"></a>
+      <a href="tel:+919155718571" class="call"><img src="image/png/call.png" alt="" data-aos="fade-right"></a>
+    </div>
+    <!-- fixed button for call and whatsapp -->
+    <!-- javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 1000
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/66c305820cca4f8a7a77800e/1i5ksr1sj';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script> -->
+    <!--End of Tawk.to Script-->
+  </body>
+
+  </html>
+  
   <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
   <!-- Footer Start -->
   <div class="container-fluid footer">
